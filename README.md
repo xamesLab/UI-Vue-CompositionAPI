@@ -1,2 +1,2 @@
-# UI-Vue-CompositionAPI
-UI components for Vue3/CompositionAPI
+# UI компоненты (Button и Input) для Vue-проекта
+CompositionAPI и TypeScrypt
