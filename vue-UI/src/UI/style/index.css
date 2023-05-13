@@ -1,0 +1,43 @@
+:root {
+  --color-primary: #009ee3;
+  --color-primary-hover: #0070d2;
+  --border-radius: 5px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+label {
+	display: block;
+	margin-bottom: 3px;
+	color: var(--color-primary-hover);
+}
+
+.btn {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: var(--border-radius);
+}
+
+.btn:not([disabled]) {
+  cursor: pointer;
+}
+
+.btn:not([disabled]):hover {
+  background-color: var(--color-primary-hover);
+}
+
+.input-content {
+  padding: 0.5rem;
+  color: var(--color-primary);
+  outline-color: var(--color-primary-hover);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--border-radius);
+}
+
+.input-wrap, .btn {
+  margin: 0 10px 13px 0;
+}
