@@ -45,13 +45,6 @@
 
 ## Пример использования
 ```html
-<form @submit.prevent="eventSubTest">
-  <Input placeholder="name" name="name" v-model:value="formData.name" />
-  <Input placeholder="pass" name="pass" isSecret v-model:value="formData.password" />
-  <Button label="My button submit" size="lg" buttonType="submit" />
-</form>
-```
-```html
 <script setup lang="ts">
   import { ref } from "vue";
   import Button from "./UI/Button.vue";
@@ -65,4 +58,11 @@
     formData.value = { name: "", password: "" };
   };
 </script>
+```
+```html
+<form @submit.prevent="eventSubmit">
+  <Input placeholder="name" name="name" v-model:value="formData.name" />
+  <Input placeholder="pass" name="pass" isSecret v-model:value="formData.password" />
+  <Button label="My button submit" size="lg" buttonType="submit" />
+</form>
 ```
